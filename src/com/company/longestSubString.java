@@ -2,17 +2,9 @@ package com.company;
 
 import java.util.HashSet;
 
-public class Main {
+public class longestSubString {
 
-    public static void main (String[] args) {
-        // Java program to find the longest substring without repetition
-        String str = "abcdab";
-        longest(str);
-    }
-
-
-
-    private static void longest(String str) {
+    private static String longest (String str){
         HashSet<Character> set = new HashSet<>();
         String longestOverall = "";
         String longestTillnow= "";
@@ -29,7 +21,9 @@ public class Main {
                 longestOverall = longestTillnow;
             }
         }
-        System.out.println(longestOverall);
-      //  return longestOverall;
-    }
+        return longestOverall;
+
+
+}
+
 }
